@@ -12,7 +12,8 @@ file_extensions = {
     "Programas": [".exe", ".msi", ".deb", ".pkg", ".dmg", ".apk", ".bat"]
 }
 
-def fileOrganizer():
+def file_organizer():
+    """Organiza los archivos en el directorio"""
     for file in files:
         for category, extensions in file_extensions.items():
             for extension in extensions:
@@ -24,7 +25,7 @@ def fileOrganizer():
 
 command = input("¿Quieres organizar los archivos? (S/N): ")
 if command.upper() == "S":
-    fileOrganizer()
+    file_organizer()
     print("¡Archivos organizados con éxito!")
 else:
     print("¡Archivos no organizados!")
