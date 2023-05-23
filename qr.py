@@ -1,6 +1,7 @@
 import qrcode
 
 def generate_qr_code(data, filename):
+    """Genera un codigo QR a partir de un texto y lo guarda en un archivo png"""
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
